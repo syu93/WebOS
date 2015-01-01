@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Title </title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="theme/main.css">
+		<link rel="stylesheet" href="theme/icon-1/css/icon-1.css">
+		<link rel="stylesheet" href="theme/icon-1/css/animation.css">
+		<style>
+			i{
+/*				font-size: 50px;
+				background: red;
+				color:white;*/
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="core-headerbar">
+				<div class="headerbar">
+					<button class="core-button exit" title="Exit application" onclick="exit()">
+						<i class="icon-power"></i>
+					</button>
+				</div>
+			</div>
+			<nav>
+			</nav>
+		</header>
+		<section>
+		</section>
+		<aside>
+		</aside>
+		<footer>
+			<div class="core-taskbar">
+				<div class="taskbar">
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<script>
+	var gui = require('nw.gui');
+	console.log(gui.App.argv);
+	function exit(){
+		gui.App.quit();
+	}
+</script>
